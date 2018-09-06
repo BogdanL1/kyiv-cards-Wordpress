@@ -1,0 +1,1555 @@
+@font-face {
+    font-family: 'Century Gothic';
+    src: url(../fonts/'CenturyGothic-Italic.eot');
+    src: local(../fonts/'Century Gothic Italic'), local('CenturyGothic-Italic'),
+        url(../fonts/'CenturyGothic-Italic.eot?#iefix') format('embedded-opentype'),
+        url(../fonts/'CenturyGothic-Italic.woff') format('woff'),
+        url(../fonts/'CenturyGothic-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+} 
+
+@font-face {
+    font-family: 'Century Gothic';
+    src: url(../fonts/'CenturyGothic.eot');
+    src: local(../fonts/'Century Gothic'), local('CenturyGothic'),
+        url(../fonts/'CenturyGothic.eot?#iefix') format('embedded-opentype'),
+        url(../fonts/'CenturyGothic.woff') format('woff'),
+        url(../fonts/'CenturyGothic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Century Gothic';
+    src: url(../fonts/'CenturyGothic-Bold.eot');
+    src: local(../fonts/'Century Gothic Bold'), local('CenturyGothic-Bold'),
+        url(../fonts/'CenturyGothic-Bold.eot?#iefix') format('embedded-opentype'),
+        url(../fonts/'CenturyGothic-Bold.woff') format('woff'),
+        url(../fonts/'CenturyGothic-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Century Gothic';
+    src: url(../fonts/'CenturyGothic-BoldItalic.eot');
+    src: local(../fonts/'Century Gothic Bold Italic'), local('CenturyGothic-BoldItalic'),
+        url(../fonts/'CenturyGothic-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url(../fonts/'CenturyGothic-BoldItalic.woff') format('woff'),
+        url(../fonts/'CenturyGothic-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+} 
+
+
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-weight: normal;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    font-size: 1em;
+    font-family: "SegoeUI", sans-serif;
+    line-height: 1.5;
+    height: 100%;
+}
+
+a{
+    text-decoration: none;  
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+a:active{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+img{
+   display:block;
+   max-width:100%;
+   height:auto;
+}
+
+header{
+    width: 100%;
+}
+
+.header-inner{
+    max-width: 1055px;
+    margin: 0 auto;
+}
+
+.first-line{
+    display: flex;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.logo-block{
+    display: flex;
+}
+
+.logo_img{
+    height: 100%;
+}
+
+.title{
+    width: 90px;
+    height: 100%;
+    margin-left: 5%;
+}
+
+.title h1{
+  font-size: 1.29em;
+  font-family: "Century Gothic";
+  color: rgb( 83, 83, 83 );
+  text-align: left;
+}
+
+.order-samples{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: 76px;
+    border: 2px solid #e01526;
+    border-radius: 10px;
+    padding: 5px 5px 5px 10px;
+    
+}
+
+.a-order-samples{
+    margin-left: 28.9%;
+}
+
+.order-samples h1{
+  font-size: 1.29em;
+  font-family: "Century Gothic";
+  color: rgb( 224, 21, 38 );
+  text-align: center;
+  line-height: 1.5;
+  
+}
+
+.order-block{
+    margin-left: 2.84%;
+    margin-right: 2.84%;
+}
+
+.call-me{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.14em;
+    font-family: "Century Gothic";
+    color: rgb( 228, 41, 50 );
+    text-align: center;
+    border: 2px solid #e01526;
+    border-radius: 10px;
+    padding: 2px;
+}
+
+.call-me img{
+    height: 100%;
+    padding-right: 5px;
+}
+
+.order{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #e01526;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.order h3{
+    font-size: 1.71em;
+    font-family: "Century Gothic";
+    color: rgb( 224, 21, 38 );
+    text-align: center;
+}
+
+.order img{
+    height: 100%;
+    padding-right: 15px;
+}
+
+.first{
+    display: inline;
+    padding-left: 5px;
+}
+.last  {
+    display: inline;
+    padding-left: 5px;
+}
+
+.number-block{
+    display: flex;
+}
+
+.numbers img{
+    padding-right: 5px;
+}
+
+.numbers h3{
+    text-align: right;
+    font-size: 0.86em;
+    font-family: "Century Gothic";
+    color: rgb( 111, 111, 110 );
+    line-height: 1.333;
+    vertical-align: middle;
+}
+
+.header-inner nav{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    max-width: 1055px;
+}
+
+.header-inner nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header-inner nav ul li{
+  width: 100px;
+  text-align: center;
+}
+
+.elem-arrow{
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+
+.header-inner nav a{
+  font-size: 0.94em;
+  font-family: "Century Gothic";
+  color: rgb( 135, 135, 134 );
+  text-align: center;
+  font-weight: bold;
+}
+
+.menu-img{
+    background: url(../img/menu-arrow.png) ;
+    width: 15px;
+    height: 8px;
+}
+
+.elem-arrow li{
+    width: 110px;
+}
+
+.long-li{
+    width: 90px;
+    text-align: center;
+}
+
+.long-li-2{
+    width: 50px;
+    text-align: center;
+}
+
+.free-delivery li{
+    width: 95px;
+    margin-right: 0;
+}
+
+.tech-requier li{
+    width: 100px;
+    margin-right: 0;
+}
+
+.portf li{
+    width: 90px;
+}
+
+.header-inner nav a:hover{
+  color: rgb( 227, 27, 39 );
+}
+
+.header-inner nav a:hover .menu-img{
+    background: url(../img/menu-arrow-hover.png) ;
+    width: 15px;
+    height: 8px;
+}
+
+/*header-section */
+
+.header-section{
+    background: url(../img/header_background.jpg);
+    background-size: cover;
+}
+
+.cards h1{
+  font-size: 7.86em;
+  font-family: "Century Gothic";
+  color: rgb( 255, 255, 255 );
+  text-align: center;
+  text-shadow: 4px 4px 0px rgba(243, 154, 41, 1);
+}
+
+.header-section-inner{
+    display: flex;  
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+    padding-top: 75px;
+    padding-bottom: 105px;
+}
+
+.section-content{
+    margin-left: 6.27%;
+}
+
+.section-content_title{
+    background-color: #f39a29;
+}
+
+.section-content_title h3{
+  font-size: 2.14em;
+  font-family: "Century Gothic";
+  color: rgb( 255, 255, 255 );
+  text-align: center;
+  padding: 5px 50px 5px 50px;
+}
+
+.section-content_list{
+    border: #fff solid 5px;
+    padding: 7px;
+}
+
+.section-content_list ol{
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px 10px;
+}
+
+.section-content_list li{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2px;    
+}
+
+.section-content_list h2{
+  font-size: 1.14em;
+  font-family: "Century Gothic";
+  color: rgb( 54, 54, 54 );
+  text-align: center;
+}
+
+.section-content_list a{
+    width: 120px;
+    border: #ff0000 1px solid;
+    border-radius: 10px;
+}
+
+.section-content_list h3{
+  font-size: 1em;
+  font-family: "Century Gothic";
+  color: rgb( 224, 21, 38 );
+  text-align: center;
+  vertical-align: middle;
+}
+
+.submenu-bg{
+    background-color: #e01526;
+}
+
+.submenu-inner{
+    max-width: 1055px;
+    margin: 0 auto;
+}
+
+.submenu-inner nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.submenu-inner a{
+  font-size: 0.93em;
+  font-family: "Century Gothic";
+  color: rgb( 255, 255, 255 );
+  text-align: center;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 27px;
+  padding-right: 28px;
+}
+
+.submenu-inner li{
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.submenu-inner a:hover{
+    background-color: #a0a0a0;
+}
+
+.submenu .block{
+    display: flex;
+    align-items: center;
+    border-right: 2px solid #fff;
+    padding-left: 23px;
+    padding-right: 22px;
+}
+
+.submenu .block-last{
+    padding-left: 23px;
+    padding-right: 22px;
+}
+
+.submenu-img{
+    background: url(../img/submenu-arrow.png) ;
+    width: 15px;
+    height: 8px;
+}
+
+/*price-for-printing*/
+.price-for-printing{
+    width: 100%;
+}
+
+.price-for-printing{
+    margin-top: 45px;
+}
+
+.price-for-printing-title{
+  font-size: 2.14em;
+  font-family: "Century Gothic";
+  color: rgb( 255, 255, 255 );
+  background-color: #f39a29;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.price-for-printing-subtitle{
+  font-size: 1em;
+  font-family: "Century Gothic";
+  color: rgb( 125, 125, 125 );
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.one_two_sides h3{
+  font-size: 1.29em;
+  font-family: "Century Gothic";
+  color: rgb( 125, 125, 125 );
+  text-align: center;
+}
+
+.one_two_sides a{
+    border: 2px solid #f39a29;
+    border-radius: 10px;
+    font-family: "Century Gothic";
+    color: rgb( 125, 125, 125 );
+    text-align: center;
+    padding-right: 3px;
+    padding-left: 3px;
+} 
+
+.one_two_sides span{
+    font-family: "Century Gothic";
+    color: rgb( 125, 125, 125 );
+    text-align: center;
+    padding: 12px;
+}
+
+.one_two_sides a:active{
+    border-color: #595959;
+}
+
+.price-for-printing_table_title{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.price-for-printing_table_title div{
+    height: 55px;
+    width: 140px;
+    margin-right: 5px;
+}
+
+.price-for-printing_table_title h3{
+    text-align: center;
+    line-height: 55px;
+    font-size: 1.29em;
+    font-family: "Century Gothic";
+    color: rgb( 255, 255, 255 );
+}
+
+.first-el{
+    background-color: #7d7d7d;
+    position: relative;
+}
+
+.first-el::after {
+    content: ''; 
+    position: absolute; /* Абсолютное позиционирование */
+    left: 40%; bottom: -30px; /* Положение треугольника */
+    border: 15px solid transparent; /* Прозрачные границы */
+    border-top: 15px solid #7d7d7d; /* Добавляем треугольник */
+}
+
+.second-el{
+    background-color: #f39a29;
+    position: relative;
+}
+
+.second-el::after {
+    content: ''; 
+    position: absolute; /* Абсолютное позиционирование */
+    left: 40%; bottom: -30px; /* Положение треугольника */
+    border: 15px solid transparent; /* Прозрачные границы */
+    border-top: 15px solid #f39a29; /* Добавляем треугольник */
+}
+
+.third-el{
+    background-color: #ed7c27;
+    position: relative;
+}
+
+.third-el::after {
+    content: ''; 
+    position: absolute; /* Абсолютное позиционирование */
+    left: 40%; bottom: -30px; /* Положение треугольника */
+    border: 15px solid transparent; /* Прозрачные границы */
+    border-top: 15px solid #ed7c27; /* Добавляем треугольник */
+}
+
+.fourth-el{
+    background-color: #ea6626;
+    position: relative;
+}
+
+.fourth-el::after {
+    content: ''; 
+    position: absolute; /* Абсолютное позиционирование */
+    left: 40%; bottom: -30px; /* Положение треугольника */
+    border: 15px solid transparent; /* Прозрачные границы */
+    border-top: 15px solid #ea6626; /* Добавляем треугольник */
+}
+
+.fifth-el{
+    background-color: #e64e25;
+    position: relative;
+}
+
+.fifth-el::after {
+    content: ''; 
+    position: absolute; /* Абсолютное позиционирование */
+    left: 40%; bottom: -30px; /* Положение треугольника */
+    border: 15px solid transparent; /* Прозрачные границы */
+    border-top: 15px solid #e64e25; /* Добавляем треугольник */
+}
+
+.sixth-el{
+    background-color: #e01526;
+    position: relative;
+}
+
+.sixth-el::after {
+    content: ''; 
+    position: absolute; /* Абсолютное позиционирование */
+    left: 40%; bottom: -30px; /* Положение треугольника */
+    border: 15px solid transparent; /* Прозрачные границы */
+    border-top: 15px solid #e01526; /* Добавляем треугольник */
+}
+
+.table-first-line{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.table-first-line div{
+    height: 38px;
+    width: 140px;
+    margin-right: 5px;
+    background-color: #d2d2d2;
+    line-height: 38px;
+    font-size: 1.29em;
+    color: rgb( 0, 0, 0 );
+    text-align: center;
+    margin-top: 20px; 
+}
+
+.table-second-line{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.table-second-line div{
+    height: 38px;
+    width: 140px;
+    margin-right: 5px;
+    background-color: #eeeeee;
+    line-height: 38px;
+    font-size: 1.29em;
+    color: rgb( 0, 0, 0 );
+    text-align: center;
+    margin-top: 5px; 
+}
+
+.table-third-line{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.table-third-line div{
+    height: 38px;
+    width: 140px;
+    margin-right: 5px;
+    background-color: #d2d2d2;
+    line-height: 38px;
+    font-size: 1.29em;
+    color: rgb( 0, 0, 0 );
+    text-align: center;
+    margin-top: 5px; 
+}
+
+.table-fourth-line{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.table-fourth-line div{
+    height: 38px;
+    width: 140px;
+    margin-right: 5px;
+    background-color: #eeeeee;
+    line-height: 38px;
+    font-size: 1.29em;
+    color: rgb( 0, 0, 0 );
+    text-align: center;
+    margin-top: 5px; 
+}
+
+/*Скорость печати*/
+.speed-of-printing{
+    margin-top: 50px;
+}
+
+.speed-of-printing-title{
+    font-size: 2.14em;
+    font-family: "Century Gothic";
+    color: rgb( 255, 255, 255 );
+    background-color: #f39a29;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 2px;
+}
+
+.speed-of-printing-subtitle{
+  font-size: 1.71em;
+  font-family: "Century Gothic";
+  color: rgb( 125, 125, 125 );
+  text-align: center;
+  margin-top: 45px;
+  margin-bottom: 30px;
+}
+
+.term-of-making h3{
+  font-size: 1.29em;
+  font-family: "Century Gothic";
+  color: rgb( 125, 125, 125 );
+  text-align: center;
+}
+
+.term-of-making a{
+    border: 2px solid #f39a29;
+    border-radius: 10px;
+    font-family: "Century Gothic";
+    color: rgb( 125, 125, 125 );
+    text-align: center;
+    padding-right: 5px;
+    padding-left: 5px;
+    display: inline-block;
+} 
+
+.term-of-making span{
+    font-family: "Century Gothic";
+    color: rgb( 125, 125, 125 );
+    text-align: center;
+    padding: 12px;
+}
+
+.term-of-making a:active{
+    border-color: #595959;
+}
+
+.for-kyiv{
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.for-kyiv img{
+    width: 109px;
+    height: 69px;
+    margin-top: 75px;
+    margin-left: 70px;
+    margin-right: 20px;
+}
+
+.calendar{
+    background: url(../img/calendar.png) no-repeat;
+    width: 130px;
+    margin: 0 auto;
+}
+
+.calendar h2{
+  font-size: 5em;
+  font-family: "Century Gothic";
+  color: rgb( 89, 89, 89 );
+  text-align: center;
+  line-height: 1;
+  padding-top: 35px;
+}
+
+.calendar h3{
+  font-size: 1.29em;
+  font-family: "Century Gothic";
+  color: rgb( 224, 21, 38 );
+  text-align: center;
+  line-height: 1;
+  padding-bottom: 8px;
+}
+
+.calendar-title{
+  font-size: 1.71em;
+  font-family: "Century Gothic";
+  color: rgb( 0, 0, 0 );
+  text-align: center;
+}
+
+.text{
+  font-size: 1.29em;
+  font-family: "Century Gothic";
+  text-align: center;
+  margin-top: 20px;
+  line-height: 1;
+}
+
+.today .text {
+  color: rgb( 243, 154, 41 );
+}
+
+.tomorrow{
+    width: 23.64%;
+}
+
+.tomorrow .text{
+  color: rgb( 234, 102, 38 );
+}
+
+.tomorrow .adresses{
+    margin-top: 15px;
+}
+
+.tomorrow .adresses h3{
+  font-size: 1em;
+  font-family: "Century Gothic";
+  color: rgb( 205, 29, 30 );
+  text-align: left;
+  line-height: 1.2;
+}
+
+.tomorrow .adresses h2{
+    font-size: 1em;
+  font-family: "Century Gothic";
+    color: #6f6f6e;
+    text-align: left;
+    padding-left: 15px;
+    line-height: 1;
+}
+
+.or{
+  font-size: 2.14em;
+  font-family: "Century Gothic";
+  color: rgb( 224, 21, 38 );
+  font-weight: bold;
+  line-height: 0.6;
+  text-align: center;
+  margin-top: 90px;
+  margin-right: 30px;
+}
+
+.after-tomorrow {
+    width: 20.13%;
+}
+
+.after-tomorrow .text{
+  color: rgb( 224, 21, 38 );
+}
+
+
+.for-another-cities{
+    display: flex;
+    justify-content: center;
+    margin-top: 55px;
+    margin-bottom: 35px;
+}
+
+.for-another-cities img{
+    width: 109px;
+    height: 69px;
+    margin-top: 75px;
+}
+
+.for-another-cities .today{
+    width: 16.5%;
+}
+
+.for-another-cities .tomorrow{
+    width: 16.5%;
+}
+
+.for-another-cities .after-tomorrow{
+    width: 15%;
+}
+
+
+/* Описание продукции */
+
+.prod-descr-background{
+    background: url(../img/prod_descr_bg.jpg) no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.product-description-title{
+    font-size: 2.14em;
+    font-family: "Century Gothic";
+    color: rgb( 255, 255, 255 );
+    background-color: #f39a29;
+    text-align: center;
+    padding: 2px;
+    margin-bottom: 10px;
+}
+
+.block-border{
+    padding-top: 115px;
+    padding-left: 14.85%;
+    padding-bottom: 135px;
+}
+
+.block-content{
+    width: 42.9%;
+     border: #fff solid 5px;
+     padding: 10px;
+}
+
+.block-content ul{
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.block-content li{
+    list-style-image: url(../img/list_circle.png);
+  font-size: 1.29em;
+  font-family: "Century Gothic";
+  color: rgb( 1, 1, 1);
+  text-align: left;
+  line-height: 1;
+  margin-left: 20px;
+}
+
+
+/* Стоимость разработки макета */
+
+.price-of-maket{
+    margin-top: 35px;
+}
+
+.price-of-maket-title{
+    font-size: 2.14em;
+    font-family: "Century Gothic";
+    color: rgb( 255, 255, 255 );
+    background-color: #f39a29;
+    text-align: center;
+    padding: 2px;
+    margin-bottom: 10px;
+}
+
+.price-of-maket-background{
+    background: url(../img/price_of_maket_bg.jpg) no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.price-of-maket .block-border{
+    padding-top: 280px;
+    padding-left: 59.75%;
+    padding-bottom: 75px;
+}
+
+.price-of-maket .block-content{
+    width: 55.74%;
+    border: #fff solid 5px;
+    padding: 10px;
+    margin-right: 0;
+}
+
+.price-of-maket .block-content ul{
+    padding: 22px;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.price-of-maket .block-content li{
+    list-style: none;
+  font-size: 1.29em;
+  font-family: "Century Gothic";
+  color: rgb( 1, 1, 1);
+  text-align: left;
+  line-height: 1;
+}
+
+.dev-layouts-title{
+    font-size: 1.57em;
+    font-family: "Century Gothic";
+    color: rgb( 255, 0, 0 );
+    text-align: center;
+    margin-top: 25px;
+}
+
+.look-our-layouts{
+    display: flex;
+    justify-content: center;
+    line-height: 1;
+    align-items: center;
+}
+
+.look-our-layouts h2{
+  font-size: 1.57em;
+  font-family: "Century Gothic";
+  color: rgb( 255, 0, 0 );
+  text-align: center;
+}
+
+.look-our-layouts h3{
+  font-size: 1.57em;
+  font-family: "Century Gothic";
+  color: rgb( 243, 154, 41 );
+  text-align: center;
+  padding: 3px;
+}
+
+.look-our-layouts-button{
+    border: 2px solid #f39a29;
+    border-radius: 10px;
+    margin-left: 15px;
+}
+
+.look-our-layouts a:active{
+    border-color: #595959;
+}
+
+.our-works-bg{
+    background: url(../img/our_works_bg.jpg) no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 25px;
+    margin-bottom: 35px;
+}
+
+.our-works-bg a{
+    margin-top: 30px;
+    margin-bottom: 205px;
+    background-color: rgb( 84, 84, 84 );
+    box-shadow: 5.829px 9.329px 27px 0px rgb( 0, 0, 0 );
+}
+
+.first-work{
+    margin-left: -45px;
+}
+
+.last-work{
+    margin-right: -45px;
+}
+
+
+/* Бесплатная доставка */
+
+.delivery{
+    width: 100%;
+    margin-bottom: 35px;
+}
+
+.delivery-title{
+    font-size: 2.14em;
+    font-family: "Century Gothic";
+    color: rgb( 255, 255, 255 );
+    background-color: #f39a29;
+    text-align: center;
+    padding: 2px;
+    margin-bottom: 10px;
+}
+
+.delivery-bg{
+    background: url(../img/delivery_bg.jpg) no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.subtitle-line{
+    display: flex;
+}
+
+.delivery-bg h1{
+  font-size: 2.86em;
+  font-family: "Century Gothic";
+  color: rgb( 255, 255, 255 );
+  margin-left: 15.84%;
+  padding-top: 20px;
+  margin-right: 27.39%;
+}
+
+.subtitle-line img{
+    padding-top: 5px;
+    width: 216px;
+    height: 77px;
+}
+
+.delivery .block-border1{
+    margin-top: 250px;
+    padding-left: 14.52%;
+    padding-bottom: 75px;
+}
+
+.delivery .block-content1{
+    width: 37%;
+    border: #fff solid 5px;
+    padding: 10px;
+    margin-right: 0;
+}
+
+.delivery .block-content1 h3{
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    text-align: center;
+}
+
+.delivery .block-content1 h3 span{
+    color: red;
+    font-weight: bold;
+}
+
+
+/* Возвращаем 15% от заказа */
+
+.give-back{
+    margin-bottom: 35px;
+    width: 100%;
+}
+
+.give-back-title{
+    font-size: 2.14em;
+    font-family: "Century Gothic";
+    color: rgb( 255, 255, 255 );
+    background-color: #f39a29;
+    text-align: center;
+    padding: 2px;
+    margin-bottom: 10px;
+}
+
+.give-back-bg{
+    background: url(../img/give_back_bg.jpg) no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.give-back .block-border2{
+    padding-top: 130px;
+    padding-left: 51.49%;
+    padding-bottom: 135px;
+}
+
+.give-back .block-content2{
+    width: 50%;
+    border: #fff solid 5px;
+    padding: 10px;
+    margin-right: 0;
+}
+
+.give-back .block-content2 h3{
+    background: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 15px;
+}
+
+
+/* Футер */
+
+footer{
+    background-color: #535353;
+    padding-top: 35px;
+}
+
+.footer-line{
+    display: flex;
+    max-width: 1055px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.f-logo-block{
+    display: flex;
+}
+
+.f-title{
+    width: 90px;
+    height: 100%;
+    margin-left: 5%;
+}
+
+.f-title h1{
+  font-size: 1.29em;
+  font-family: "Century Gothic";
+  color: rgb( 255, 255, 255 );
+  text-align: left;
+}
+
+.footer-line li a{
+  font-size: 0.93em;
+  font-family: "Century Gothic";
+  color: rgb( 215, 215, 215 );
+  text-align: left;
+  line-height: 1;
+}
+
+.f-order-samples{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 165px;
+    height: 76px;
+    border: 2px solid #e01526;
+    border-radius: 10px;
+    padding: 5px 5px 5px 10px;
+    
+}
+
+.f-a-order-samples{
+    
+}
+
+.f-order-samples h1{
+  font-size: 1.29em;
+  font-family: "Century Gothic";
+  color: rgb( 224, 21, 38 );
+  text-align: center;
+  line-height: 1.5;
+  
+}
+
+.f-order-block{
+
+}
+
+.f-call-me{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.14em;
+    font-family: "Century Gothic";
+    color: rgb( 228, 41, 50 );
+    text-align: center;
+    border: 2px solid #e01526;
+    border-radius: 10px;
+    padding: 2px;
+}
+
+.f-call-me img{
+    height: 100%;
+    padding-right: 5px;
+}
+
+.f-order{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #e01526;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.f-order h3{
+    font-size: 1.71em;
+    font-family: "Century Gothic";
+    color: rgb( 224, 21, 38 );
+    text-align: center;
+}
+
+.f-order img{
+    height: 100%;
+    padding-right: 15px;
+}
+
+.f-number-block{
+    display: flex;
+}
+
+.f-numbers img{
+    padding-right: 5px;
+}
+
+.f-numbers h3{
+    text-align: right;
+    font-size: 0.86em;
+    font-family: "Century Gothic";
+    color: rgb( 255, 255, 255 );
+    line-height: 1.333;
+    vertical-align: middle;
+}
+
+.text-bottom{
+  font-size: 0.86em;
+  font-family: "Century Gothic";
+  color: rgb( 255, 255, 255 );
+  text-align: center;
+  margin-top: 35px;
+  padding-bottom: 20px;
+}
+
+
+/* @media 
+@media (min-width: 768px) { width: 750px; }
+  @media (min-width: 992px) { width: 970px; }
+  @media (min-width: 1200px) { width: 1140px; }*/
+
+@media screen and (max-width: 2520px) {
+    body{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    body{
+        font-size: 14px;
+    }
+    .header-inner nav ul{
+        justify-content: center;
+    }
+
+    .header-inner nav a{
+        margin-right: 15px;
+    }
+
+    .submenu-inner nav ul{
+        justify-content: center;
+    }
+
+}
+
+@media screen and (max-width: 1026px) {
+    body{
+        font-size: 16px;
+    }
+    
+    .header-inner nav ul li{
+        width: auto;
+    }
+
+    .first-line{
+        justify-content: center;
+    }
+
+    .first-line a{
+        margin: 0;
+    }
+
+    .logo-block{
+        padding-right: 15px;
+    }
+
+    .footer-line{
+        -webkit-flex-wrap: wrap;
+        -moz-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        -o-flex-wrap: wrap;
+        flex-wrap: wrap;
+        justify-content: center;
+        -ms-align-items: center;
+        align-items: center;
+    }
+
+    .footer-line div{
+        margin-right: 7px;
+        margin-left: 7px;
+    }
+
+    .footer-line ul{
+        margin-right: 15px;
+    }
+
+    .f-numbers{
+        display: flex;
+        justify-content: center;
+    }
+
+    .f-numbers h3{
+        margin-right: 10px;
+        font-size: 0.63em;
+        text-align: center;
+    }
+
+    .f-numbers img{
+        height: 14px;
+    }
+
+    .calendar h2{
+        padding-top: 30px;
+    }
+
+    .long-li{
+        width: 110px;
+    }
+    .look-our-layouts{
+        flex-direction: column;
+        -ms-align-items: center;
+        align-items: center;
+    }
+
+}
+
+@media screen and (max-width: 930px) {
+    body{
+        font-size: 14px;
+    }
+    .logo-block{
+        padding-right: 45px;
+        -ms-align-items: center;
+        align-items: center;
+    }
+    .header-section-inner{
+        flex-direction: column;
+    }
+    header a{
+        margin-left: 15px;
+    }
+    .section-content{margin-left: 0;}
+    .portf li{width: auto; margin-right: 5px;}
+    .free-delivery li{width: auto; margin-right: 5px;}
+    .tech-requier li{width: auto; margin-right: 5px;}
+    
+    .price-for-printing_table_title h3{
+        font-size: 0.9em;
+    }
+    .one_two_sides a{
+      display: inline-block;
+    }
+    .for-kyiv img{
+        transform: rotate(90deg);
+        margin-top: 30px;
+        margin-bottom: 20px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .tomorrow{width: 100%;}
+    .tomorrow .adresses{
+        padding: 0;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .tomorrow .adresses h3{
+        text-align: center;
+        font-size: 1.4em;
+    }
+    .tomorrow .adresses h2{
+        text-align: center;
+        font-size: 1.3em;
+    }
+    .or{
+        margin-right: 0;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .after-tomorrow{width: 100%;}
+    .calendar h2{
+        padding-top: 30px;
+        padding-bottom: 5px;
+    }
+    .for-kyiv{
+        flex-direction: column;
+        -ms-align-items: center;
+        align-items: center;
+    }
+    .for-another-cities{
+        flex-direction: column;
+        -ms-align-items: center;
+        align-items: center;
+    }
+    .for-another-cities .today, .for-another-cities .tomorrow, .for-another-cities .after-tomorrow{
+        width: auto;
+    }
+    .for-another-cities img{
+         transform: rotate(90deg);
+         margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    .subtitle-line{
+        justify-content: center;
+    }
+    .delivery-bg h1{
+        margin: 0;
+    }
+
+    .block-border{
+        padding-left: 0;
+    }
+    .block-content{
+        width: auto;
+    }
+    .block-content li{
+        text-align: center;
+        font-size: 1.7em;
+    }
+    .price-of-maket .block-border{
+        padding-left: 0;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .price-of-maket .block-content{
+        width: auto;
+    }
+    .price-of-maket .block-content li{
+        text-align: center;
+        font-size: 1.7em;
+    }
+    .order-samples{
+        padding: 10px 10px;
+    }
+    .delivery .block-border1{
+        margin-top: 40px;
+        padding-left: 0;
+    }
+    .delivery .block-content1{
+        width: auto;
+    }
+    .delivery .block-content1 h3{
+        font-size: 1.6em;
+    }
+    .give-back .block-border2{
+        padding-left: 0;
+    }
+    .give-back .block-content2{
+        width: auto;
+    }
+    .give-back .block-content2 h3{
+        font-size: 1.6em;
+    }
+    .a-f-logo-block{
+      width: 90%;
+      display: flex;
+      justify-content: center;
+    }
+    footer ul{
+        margin-left: 15px;
+        text-align: center;
+    }
+    .f-numbers{
+        padding-top: 15px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .subtitle-line{
+        flex-direction: column;
+        -ms-align-items: center;
+        align-items: center;
+    }
+    .delivery-bg h1{text-align: center;}
+    .cards h1{font-size: 5.5em;}
+}
+
+@media screen and (max-width: 500px){
+    .header-inner nav ul{
+      flex-direction: column;
+    }
+    .price-for-printing_table_title h3{font-size: 0.7em;}
+    .cards h1{font-size: 5em;}
+    .section-content_list a{
+        line-height: 60px;
+        width: auto;
+        padding: 3px;
+    }
+    .a-order-samples{
+      width: 90%;
+    }
+    .order-samples h1{
+      margin-left: 10px;
+    }
+    .order-block{
+      width: 80%;
+    }
+    .section-content_list li{
+        -ms-align-items: center;
+        align-items: center;
+    }
+    .header-inner nav{
+      flex-direction: column;
+    }
+    .section-content_list a{
+      line-height: 1.5;
+    }
+    .header-section-inner{
+      padding-bottom: 70px;
+      padding-top: 70px;
+    }
+    .submenu .block{
+        border: none;
+    }
+    .tomorrow .adresses{
+      border: 1px solid #6f6f6e;
+      padding: 5px;
+    }
+    footer a{
+        padding-top: 3px;
+        padding-bottom: 3px;
+        -ms-align-items: center;
+        align-items: center;
+    }
+    .f-order-samples{
+        width: auto;
+    }
+    .order-block{
+        margin-top: 5px;
+    }
+    .numbers{
+        margin-top: 5px;
+    }
+    .section-content_list h2{
+        text-align: left;
+    }
+    .f-numbers{
+        margin-top: 5px;
+    }
+}
